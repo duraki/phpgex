@@ -35,5 +35,7 @@ This library is open-source and free to use, therefore is licensed under GNU GEN
 ### Contribution
 
 * Email pattern taken from [EmailRegex](http://emailregex.com)
+* URL pattern taken from [Mathias Bynens](https://mathiasbynens.be/demo/url-regex) page
+
 
 
