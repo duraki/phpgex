@@ -5,11 +5,15 @@ This is a pure and beautiful PHP library implementation for common regex pattern
 
 ```php
 <?php
+
 private $phpgex;
 ...
 
 public function getProductsAction(Request $request)
 {
+	// return $request->data('email')
+	// hello@stackrecord.com
+
 	if ( $phpgex->isEmail($request->data('email') )
 	{
 		return Response::200;

@@ -8,22 +8,22 @@ class PhpgexExecutor extends AbstractPhpgexExecutor
 {
 	public function isEmail($input)
 	{
-
+		return $this->validateEmail($input);
 	}
 
 	public function isUrl($input)
 	{
-
+		return $this->validateUrl($input);
 	}
 
-	public function isIPvf($input)
+	public function isIPv4($input)
 	{
-
+		return $this->validateIPlow($input);
 	}
 
-	public function isIPvs($input)
+	public function isIPv6($input)
 	{
-
+		return $this->validateIPhigh($input);
 	}
 
 	public function isHtml($input)

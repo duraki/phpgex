@@ -1,0 +1,21 @@
+{
+    "name": "duraki/phpgex",
+    "description": "phpgex is beautiful regex pattern library written in PHP.",
+    "license": "GPL",
+    "keywords": ["phpgex"],
+    "authors": [
+        {
+            "name": "Halis Duraki",
+            "email": "duraki.halis@nsoft.ba"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stackrecord\\External\\Library\\Phpgex\\": "src"
+        }
+    }
+}
