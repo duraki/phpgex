@@ -15,7 +15,7 @@ This is a pure and beautiful PHP library implementation for common regex pattern
 	{
 		return Response::200;
 	}
-}
+...
 ```
 
 This *README* consits of several paragraphs: **Download / Install**, **Usage**, **Info**, **Contribution**.
@@ -29,7 +29,7 @@ You can use this library by cloning it into your project like:
 $ cd myCoolProject
 $ mkdir vendor/ && cd vendor/ && git clone git@github.com:dn5/phpgex.git
 ```
-
+  
 ### Usage
 
 Using the **phpgex** is lovable experince. The example bellow offer you a simple introduction on how to use **phpgex**. You may aswell check out `tests` directory which show an example of validation process. The full API documentation is available in the official GitHub wiki page for this project located [here](https://github.com/dn5/phpgex/wiki/API-documentation).
@@ -37,10 +37,9 @@ Using the **phpgex** is lovable experince. The example bellow offer you a simple
 Preferably, depening on which framework you use, you may aswell define type and object through dependency injection (pseudo bellow):
 
 ```xml
-
-	<service name="mycoolproject" class="Yourcompany\Project\MyCoolProject">
-		<argument name="phpgex" type="PhpgexExecutor" />
-	</service>
+<service name="mycoolproject" class="Yourcompany\Project\MyCoolProject">
+	<argument name="phpgex" type="PhpgexExecutor" />
+</service>
 ```
 
 In case that the **phpgex** should be reusable, you can pass it through the construct.
@@ -78,6 +77,7 @@ class MyCoolProject {
 	}
 
 }
+``
 
 ### Info
 This library is new and just rolled out. The patterns might have bugs and affect your product or software arhitecture. I'm not responsible for any action that have been made while using this library. If you are interested in joining the project, please follow contribution guide.
