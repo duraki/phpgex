@@ -77,7 +77,7 @@ class MyCoolProject {
 	}
 
 }
-``
+```
 
 ### Info
 This library is new and just rolled out. The patterns might have bugs and affect your product or software arhitecture. I'm not responsible for any action that have been made while using this library. If you are interested in joining the project, please follow contribution guide.
