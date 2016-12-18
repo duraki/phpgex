@@ -10,7 +10,7 @@ private $phpgex;
 
 public function getProductsAction(Request $request)
 {
-	if ( $phpgex->validateEmail($request->data('email') )
+	if ( $phpgex->isEmail($request->data('email') )
 	{
 		return Response::200;
 	}
@@ -19,5 +19,14 @@ public function getProductsAction(Request $request)
 
 This *README* consits of several paragraphs: **Download**, **Installation**, **Usage**, **Info**, **Contribution**.
   
-  
+### Download
+This library is open-source and free to use, therefore is licensed under GNU GENERAL PUBLIC LICENSE v3 license also included in this project under the name of **LICENSE**.  
+
+### Installation
+
+### Usage
+
+### Info
+
+### Contribution
 
