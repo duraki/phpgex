@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use Stackrecord\External\Library\Phpgex\PhpgexExecutor;
 
-class PhpgexPatternTest extends TestCase
+class PhpgexMatchPatternTest extends TestCase
 {
 	public function testIsEmail()
 	{
@@ -101,5 +101,20 @@ class PhpgexPatternTest extends TestCase
 		$this->assertEquals(true, $phpgex->isText($text));
 	}
 
+	public function testIsDate()
+	{
+		$phpgex	= new PhpgexExecutor();
+		$date	= '10/03/1982';
+
+		$this->assertEquals(true, $phpgex->isDate($date));
+	}
+
+	public function testIsCCNo()
+	{
+		$phpgex = new PhpgexExecutor();
+		$ccno	= '4532238571094916';
+
+		$this->assertEquals(true, $phpgex->isCreditCardNumber($ccno));
+	}
 
 }

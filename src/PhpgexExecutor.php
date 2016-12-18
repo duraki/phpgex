@@ -6,6 +6,13 @@ use Stackrecord\External\Library\Phpgex\AbstractPhpgexExecutor;
 
 class PhpgexExecutor extends AbstractPhpgexExecutor 
 {
+	/************************************************
+	+ PhpgexExecutor API
+	+************************************************
+	~ All callables are presented here
+	~~
+	+***********************************************/
+
 	public function isEmail($input)
 	{
 		return $this->validateEmail($input);
@@ -68,11 +75,11 @@ class PhpgexExecutor extends AbstractPhpgexExecutor
 
 	public function isDate($input)
 	{
-
+		return $this->validateDate($input);
 	}
 
 	public function isCreditCardNumber($input)
 	{
-
+		return $this->validateCreditCardNumber($input);
 	}
 }
