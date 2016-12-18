@@ -3,7 +3,7 @@ This is a pure and beautiful PHP library implementation for common regex pattern
   
 **phpgex** in it's simplicity allows you validating input like bellow. The full API documentation is on wiki page and official page.
 
-```
+```php
 <?php
 private $phpgex;
 ...
