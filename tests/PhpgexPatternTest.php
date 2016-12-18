@@ -21,6 +21,14 @@ class PhpgexPatternTest extends TestCase
 		$this->assertEquals(true, $phpgex->isUrl($url));
 	}
 
+	public function testIsSlug()
+	{
+		$phpgex = new PhpgexExecutor();
+		$slug	= 'my-simple-phpgex-test-slug';
+
+		$this->assertEquals(true, $phpgex->isSlug($slug));
+	}
+
 	public function testIsIPv4()
 	{
 		$phpgex = new PhpgexExecutor();
@@ -36,5 +44,62 @@ class PhpgexPatternTest extends TestCase
 
 		$this->assertEquals(true, $phpgex->isIPv6($ipv6));
 	}
+
+	public function testIsHtml()
+	{
+		$phpgex	= new PhpgexExecutor();
+		$html	= '<html><body><p class="pclass">Test</p></body></html>';
+
+		$this->assertEquals(true, $phpgex->isHtml($html));
+	}
+
+	public function testIsHex()
+	{
+		$phpgex = new PhpgexExecutor();
+		$hex	= '#FFFFFF';
+
+		$this->assertEquals(true, $phpgex->isHex($hex));
+	}
+
+	public function testIsZipcode()
+	{
+		$phpgex = new PhpgexExecutor();
+		$zip	= '88000';
+
+		$this->assertEquals(true, $phpgex->isZipcode($zip));
+	}
+
+	public function testIsCountry()
+	{
+		$phpgex = new PhpgexExecutor();
+		$country = 'BH';
+
+		$this->assertEquals(true, $phpgex->isCountry($country));
+	}
+
+	public function testIsNumber()
+	{
+		$phpgex = new PhpgexExecutor();
+		$number = '66613121003666';
+
+		$this->assertEquals(true, $phpgex->isNumber($number));
+	}
+
+	public function testIsFloat()
+	{
+		$phpgex = new PhpgexExecutor();
+		$float 	= '123566633.11';
+
+		$this->assertEquals(true, $phpgex->isFloat($float));
+	}
+
+	public function testIsText()
+	{
+		$phpgex = new PhpgexExecutor();
+		$text 	= 'This is some text for example';
+
+		$this->assertEquals(true, $phpgex->isText($text));
+	}
+
 
 }
