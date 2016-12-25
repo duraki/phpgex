@@ -87,4 +87,9 @@ class PhpgexExecutor extends AbstractPhpgexExecutor
 	{
 		return $this->validatePhoneNumber($input);
 	}
+
+	public function isYear($input)
+	{
+		return $this->validateDate($input);
+	}
 }

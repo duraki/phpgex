@@ -34,4 +34,6 @@ interface TypePatternEnums {
 
 	const PATTERN_PHONE		= '/^\+?[\d\s]{3,}$/'
 
+	const PATTERN_YEAR		= '/^(19|20)\d{2}$/'
+
 }

@@ -158,6 +158,16 @@ class AbstractPhpgexExecutor implements TypePatternEnums
 	 */
 	public function validatePhoneNumber($input)
 	{
-		return preg_match(self::PATTERN_PHONE, $input)
+		return preg_match(self::PATTERN_PHONE, $input);
+	}
+
+	/**
+	 * Validate year (1900-2099)
+	 * @param  string $input year
+	 * @return bool        
+	 */
+	public function validateYear($input)
+	{
+		return preg_match(self::PATTERN_YEAR, $input);
 	}
 }
