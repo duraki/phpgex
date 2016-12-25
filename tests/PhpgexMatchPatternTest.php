@@ -125,4 +125,12 @@ class PhpgexMatchPatternTest extends TestCase
 		$this->assertEquals(true, $phpgex->isPhoneNumber($phone));
 	}
 
+	public function testIsYear()
+	{
+		$phpgex = new PhpgexExecutor();
+		$year = '2005';
+
+		$this->assertEquals(true, $phpgex->isYear($year));
+	}
+
 }

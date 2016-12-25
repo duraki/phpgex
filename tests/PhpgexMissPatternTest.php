@@ -125,4 +125,12 @@ class PhpgexMissPatternTest extends TestCase
 		$this->assertEquals(false, $phpgex->IsPhoneNumber($input));
 	}
 
+	public function testIsYear()
+	{
+		$phpgex = new PhpgexExecutor();
+		$year = '1000';
+
+		$this->assertEquals(false, $phpgex->isYear($input));
+	}
+
 }
