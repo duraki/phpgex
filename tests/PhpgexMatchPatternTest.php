@@ -117,4 +117,12 @@ class PhpgexMatchPatternTest extends TestCase
 		$this->assertEquals(true, $phpgex->isCreditCardNumber($ccno));
 	}
 
+	public function testIsPhoneNumber()
+	{
+		$phpgex = new PhpgexExecutor();
+		$phone  = '+38762760558';
+
+		$this->assertEquals(true, $phpgex->isPhoneNumber($phone));
+	}
+
 }
