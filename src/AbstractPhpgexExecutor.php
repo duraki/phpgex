@@ -150,4 +150,14 @@ class AbstractPhpgexExecutor implements TypePatternEnums
 	{
 		return preg_match(self::PATTERN_CCNO, $input);
 	}
+
+	/**
+	 * Validate phone number (+xxx ....)
+	 * @param  string $input phoneNumber 
+	 * @return bool
+	 */
+	public function validatePhoneNumber($input)
+	{
+		return preg_match(self::PATTERN_PHONE, $input)
+	}
 }

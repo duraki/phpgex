@@ -82,4 +82,9 @@ class PhpgexExecutor extends AbstractPhpgexExecutor
 	{
 		return $this->validateCreditCardNumber($input);
 	}
+
+	public function isPhoneNumber($input)
+	{
+		return $this->validatePhoneNumber($input);
+	}
 }
